@@ -3,6 +3,7 @@ package co.com.sofka.mascota;
 import co.com.sofka.domain.generic.AggregateEvent;
 import co.com.sofka.generic.Edad;
 import co.com.sofka.generic.Nombre;
+import co.com.sofka.mascota.events.MascotaCreada;
 import co.com.sofka.mascota.values.MascotaId;
 
 import java.util.Set;
@@ -18,7 +19,6 @@ public class Mascota extends AggregateEvent<MascotaId> {
 
     public Mascota(MascotaId entityId, Nombre nombre, Edad edad) {
         super(entityId);
-        this.nombre = nombre;
-        this.edad = edad;
+        appendChange(new MascotaCreada(nombre, edad)).apply();
     }
 }

@@ -5,6 +5,7 @@ import co.com.sofka.generic.Detalle;
 import co.com.sofka.generic.Fecha;
 import co.com.sofka.generic.Nombre;
 import co.com.sofka.mascota.values.MascotaId;
+import co.com.sofka.procedimiento.events.ProcedimientoCreado;
 import co.com.sofka.procedimiento.values.ProcedimientoId;
 import co.com.sofka.puntoDeAtencion.values.PuntoDeAtencionId;
 
@@ -23,9 +24,6 @@ public class Procedimiento extends AggregateEvent<ProcedimientoId> {
 
     public Procedimiento(ProcedimientoId entityId, PuntoDeAtencionId puntoDeAtencionId, MascotaId mascotaId, Fecha fecha, Nombre nombre) {
         super(entityId);
-        this.puntoDeAtencionId = puntoDeAtencionId;
-        this.mascotaId = mascotaId;
-        this.fecha = fecha;
-        this.nombre = nombre;
+        appendChange(new ProcedimientoCreado(puntoDeAtencionId, mascotaId, fecha, nombre)).apply();
     }
 }
