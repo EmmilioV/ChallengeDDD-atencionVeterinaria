@@ -15,14 +15,8 @@ o
 ?src/main/java/co/com/sofka/mascota/values/CaracteristicaId.java,c\4\c41fe2484509bc706d2852da0af5ad096b5f6955
 n
 >src/main/java/co/com/sofka/procedimiento/values/FacturaId.java,f\b\fb97ca8b51a1e567cebc51bfb030dfdd4de46325
-e
-5src/main/java/co/com/sofka/procedimiento/Factura.java,8\6\86c7792ab95a104569f01a5472c843327cb5ee6e
 m
 =src/main/java/co/com/sofka/procedimiento/values/ExamenId.java,4\0\40c24bc78123b05dc8b4444ae76c359248bb3007
-d
-4src/main/java/co/com/sofka/procedimiento/Examen.java,4\9\4979b3906f58a7524c2c0ee2754763461bf2eded
-i
-9src/main/java/co/com/sofka/procedimiento/Medicamento.java,a\5\a5d7c72bbc333036df14cd2d0a57279e26ef05e2
 r
 Bsrc/main/java/co/com/sofka/procedimiento/values/MedicamentoId.java,1\4\14020ddf43e768d8d3b6cb49ed5295954d7da7d4
 t
@@ -55,8 +49,6 @@ Isrc/main/java/co/com/sofka/puntoDeAtencion/values/AniosDeExperiencia.java,c\2\
 -src/main/java/co/com/sofka/generic/Fecha.java,9\1\918c39f651b7cca9a367dd9ed9c3e120bf858eb7
 _
 /src/main/java/co/com/sofka/generic/Detalle.java,1\f\1faeafbae8479c74bb8f638c84add74a5db50be2
-m
-=src/main/java/co/com/sofka/procedimiento/values/Subtotal.java,0\3\03f214da6db328bc2f25fbb8ebeca8e076cb806f
 n
 >src/main/java/co/com/sofka/procedimiento/values/Descuento.java,e\2\e27cd96cdbcdd1d2cd695d55629ddb338167655e
 j
