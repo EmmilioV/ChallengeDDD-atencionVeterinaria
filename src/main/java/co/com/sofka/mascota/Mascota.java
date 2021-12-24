@@ -1,12 +1,14 @@
 package co.com.sofka.mascota;
 
 import co.com.sofka.domain.generic.AggregateEvent;
+import co.com.sofka.domain.generic.DomainEvent;
 import co.com.sofka.generic.Detalle;
 import co.com.sofka.generic.Edad;
 import co.com.sofka.generic.Nombre;
 import co.com.sofka.mascota.events.*;
 import co.com.sofka.mascota.values.*;
 
+import java.util.List;
 import java.util.Objects;
 import java.util.Optional;
 import java.util.Set;
@@ -27,6 +29,12 @@ public class Mascota extends AggregateEvent<MascotaId> {
     private Mascota(MascotaId entityId){
         super(entityId);
         subscribe(new MascotaChange(this));
+    }
+
+    private static Mascota from(MascotaId mascotaId, List<DomainEvent> events){
+        var mascota = new Mascota(mascotaId);
+        events.forEach(mascota::applyEvent);
+        return mascota;
     }
 
     public void registrarCaracteristica(CaracteristicaId entityId, Raza raza, Peso peso, Tamanio tamanio, Color color){
