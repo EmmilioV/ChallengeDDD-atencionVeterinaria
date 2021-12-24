@@ -21,7 +21,7 @@ public class Enfermedad extends Entity<EnfermedadId> {
         this.nombre = Objects.requireNonNull(nombre, "El nombre no debe ser nulo");
     }
 
-    public void actualizarDetalle(Detalle detalle){
+    public void brindarDetalle(Detalle detalle){
         this.detalle = Objects.requireNonNull(detalle, "El detalle no debe ser nulo");
     }
 
