@@ -25,12 +25,6 @@ q
 Asrc/main/java/co/com/sofka/puntoDeAtencion/values/ProductoId.java,8\7\87a580fdbf1f2df554c54d5a6cdd0e7d2c57e109
 y
 Isrc/main/java/co/com/sofka/puntoDeAtencion/values/ImplementoMedicoId.java,a\0\a0eb2a24006caefc487d318182a3a8cc3700617f
-k
-;src/main/java/co/com/sofka/puntoDeAtencion/Veterinario.java,e\0\e097c8af87f7ff35930b76adc7776233a09543b0
-p
-@src/main/java/co/com/sofka/puntoDeAtencion/ImplementoMedico.java,e\6\e6afce3714b2725ac4397e3eccfa46bed6138d7c
-h
-8src/main/java/co/com/sofka/puntoDeAtencion/Producto.java,b\e\bec7f1abf58ec6cb3a66da4d80bdb28ceae5627c
 ^
 .src/main/java/co/com/sofka/generic/Nombre.java,9\b\9b2897f4f5d1ee61948e613dbb22dfce7b437acf
 p
