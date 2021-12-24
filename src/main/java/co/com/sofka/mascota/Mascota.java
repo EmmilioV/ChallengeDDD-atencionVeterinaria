@@ -66,7 +66,7 @@ public class Mascota extends AggregateEvent<MascotaId> {
         appendChange(new EdadActualizada(edad)).apply();
     }
 
-    public Optional<Enfermedad> consultarEnfermedadPorId(EnfermedadId enfermedadId){
+    protected Optional<Enfermedad> consultarEnfermedadPorId(EnfermedadId enfermedadId){
         return this.enfermedades.stream()
                 .filter(enfermedad -> enfermedad.identity().equals(enfermedadId))
                 .findFirst();
