@@ -8,6 +8,7 @@ import co.com.sofka.mascota.events.*;
 import co.com.sofka.mascota.values.*;
 
 import java.util.Objects;
+import java.util.Optional;
 import java.util.Set;
 
 public class Mascota extends AggregateEvent<MascotaId> {
@@ -23,13 +24,18 @@ public class Mascota extends AggregateEvent<MascotaId> {
         appendChange(new MascotaCreada(nombre, edad)).apply();
     }
 
+    private Mascota(MascotaId entityId){
+        super(entityId);
+        subscribe(new MascotaChange(this));
+    }
+
     public void registrarCaracteristica(CaracteristicaId entityId, Raza raza, Peso peso, Tamanio tamanio, Color color){
         Objects.requireNonNull(entityId, "CaracteristicaId no debe ser nula");
         Objects.requireNonNull(raza, "raza no debe ser nula");
         Objects.requireNonNull(peso, "peso no debe ser nulo");
         Objects.requireNonNull(tamanio, "tamaño no debe ser nulo");
         Objects.requireNonNull(color, "color no debe ser nulo");
-        appendChange(new caracteristicaRegistrada(entityId, raza, peso, tamanio, color)).apply();
+        appendChange(new CaracteristicaRegistrada(entityId, raza, peso, tamanio, color)).apply();
     }
 
     public void asignarDuenio(DuenioId entityId, Nombre nombre, Telefono telefono, Edad edad){
@@ -37,26 +43,25 @@ public class Mascota extends AggregateEvent<MascotaId> {
         Objects.requireNonNull(nombre, "nombre no debe ser nula");
         Objects.requireNonNull(telefono, "telefono no debe ser nulo");
         Objects.requireNonNull(edad, "edad no debe ser nulo");
-        appendChange(new duenioAsignado(entityId, nombre, telefono, edad)).apply();
+        appendChange(new DuenioAsignado(entityId, nombre, telefono, edad)).apply();
     }
 
     public void aniadirEnfermedad(EnfermedadId entityId, Nombre nombre, Detalle detalle){
         Objects.requireNonNull(entityId, "CaracteristicaId no debe ser nula");
         Objects.requireNonNull(nombre, "nombre no debe ser nulo");
         Objects.requireNonNull(detalle, "detalle no debe ser nulo");
-        appendChange(new enfermedadAniadida(entityId, nombre, detalle)).apply();
+        appendChange(new EnfermedadAniadida(entityId, nombre, detalle)).apply();
     }
 
     public void actualizarEdad(Edad edad){
         Objects.requireNonNull(edad, "la edad no debe ser nula");
-        appendChange(new edadActualizada(edad)).apply();
+        appendChange(new EdadActualizada(edad)).apply();
     }
 
-    public Enfermedad consultarEnfermedadPorId(EnfermedadId enfermedadId){
+    public Optional<Enfermedad> consultarEnfermedadPorId(EnfermedadId enfermedadId){
         return this.enfermedades.stream()
                 .filter(enfermedad -> enfermedad.identity().equals(enfermedadId))
-                .findFirst()
-                .orElseThrow();
+                .findFirst();
     }
 
     public Nombre nombre() {

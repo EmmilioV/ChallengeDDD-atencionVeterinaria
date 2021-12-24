@@ -3,14 +3,14 @@ package co.com.sofka.mascota.events;
 import co.com.sofka.domain.generic.DomainEvent;
 import co.com.sofka.mascota.values.*;
 
-public class caracteristicaRegistrada extends DomainEvent {
+public class CaracteristicaRegistrada extends DomainEvent {
     private final CaracteristicaId entityId;
     private final Raza raza;
     private final Peso peso;
     private final Tamanio tamanio;
     private final Color color;
 
-    public caracteristicaRegistrada(CaracteristicaId entityId, Raza raza, Peso peso, Tamanio tamanio, Color color) {
+    public CaracteristicaRegistrada(CaracteristicaId entityId, Raza raza, Peso peso, Tamanio tamanio, Color color) {
         super("sofka.mascota.caracteristicaRegistrada");
         this.entityId = entityId;
         this.raza = raza;

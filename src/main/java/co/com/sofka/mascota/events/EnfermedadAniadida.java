@@ -5,12 +5,12 @@ import co.com.sofka.generic.Detalle;
 import co.com.sofka.generic.Nombre;
 import co.com.sofka.mascota.values.EnfermedadId;
 
-public class enfermedadAniadida extends DomainEvent {
+public class EnfermedadAniadida extends DomainEvent {
     private final EnfermedadId entityId;
     private final Nombre nombre;
     private final Detalle detalle;
 
-    public enfermedadAniadida(EnfermedadId entityId, Nombre nombre, Detalle detalle) {
+    public EnfermedadAniadida(EnfermedadId entityId, Nombre nombre, Detalle detalle) {
         super("sofka.mascota.enfermedadAniadida");
         this.entityId = entityId;
         this.nombre = nombre;

@@ -6,13 +6,13 @@ import co.com.sofka.generic.Nombre;
 import co.com.sofka.mascota.values.DuenioId;
 import co.com.sofka.mascota.values.Telefono;
 
-public class duenioAsignado extends DomainEvent {
+public class DuenioAsignado extends DomainEvent {
     private final DuenioId entityId;
     private final Nombre nombre;
     private final Telefono telefono;
     private final Edad edad;
 
-    public duenioAsignado(DuenioId entityId, Nombre nombre, Telefono telefono, Edad edad) {
+    public DuenioAsignado(DuenioId entityId, Nombre nombre, Telefono telefono, Edad edad) {
         super("sofka.mascota.duenioAsignado");
         this.entityId = entityId;
         this.nombre = nombre;
