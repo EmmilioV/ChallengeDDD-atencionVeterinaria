@@ -1,28 +1,6 @@
 
 7
 pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
-p
-@src/main/java/co/com/sofka/puntoDeAtencion/values/Ubicacion.java,1\e\1ed08a7676e93ba8fa51fbba1a29a223d66cc3dc
-u
-Esrc/main/java/co/com/sofka/puntoDeAtencion/values/NumeroDeCedula.java,d\3\d327c18b97a3d064d86f9aa135e88e2649087c84
-y
-Isrc/main/java/co/com/sofka/puntoDeAtencion/values/AniosDeExperiencia.java,c\2\c2413086f7ded2a945e20ab2fce6867586113930
-n
->src/main/java/co/com/sofka/procedimiento/values/Descuento.java,e\2\e27cd96cdbcdd1d2cd695d55629ddb338167655e
-j
-:src/main/java/co/com/sofka/procedimiento/values/Total.java,b\3\b31d360bf64aba955872f97bb59e62d93e1d84fe
-p
-@src/main/java/co/com/sofka/procedimiento/values/Laboratorio.java,b\7\b730bfef57d7fe6ff7372e5c41f9cb46dbb6eda7
-c
-3src/main/java/co/com/sofka/mascota/values/Peso.java,2\9\29cf5ade080754fffc59d08c692aeda7a5c05991
-d
-4src/main/java/co/com/sofka/mascota/values/Color.java,4\3\4321c8fd8ab64d7f1d357c271e8ffe93c7eda5ec
-c
-3src/main/java/co/com/sofka/mascota/values/Raza.java,5\3\535788b81eaeccb2269067bc9885317d38ad9389
-f
-6src/main/java/co/com/sofka/mascota/values/Tamanio.java,1\b\1b1896e760f9db327ae1af6b883ee7a4a25c9946
-g
-7src/main/java/co/com/sofka/mascota/values/Telefono.java,d\c\dc03d5002c8a20cca8050692730c94c20546d354
 x
 Hsrc/main/java/co/com/sofka/procedimiento/events/ProcedimientoCreado.java,4\b\4b86fafd291d0f2496f8fbff260bf32c5b199804
 o
@@ -31,8 +9,6 @@ k
 ;src/main/java/co/com/sofka/procedimiento/Procedimiento.java,f\7\f73564f92116b6f608e7d84948676389eb8097c7
 |
 Lsrc/main/java/co/com/sofka/puntoDeAtencion/events/PuntoDeAtencionCreado.java,2\6\26ffc68bb22b3de436c5eeaed9d61c071ee0c56d
-m
-=src/main/java/co/com/sofka/procedimiento/values/Subtotal.java,0\3\03f214da6db328bc2f25fbb8ebeca8e076cb806f
 d
 4src/main/java/co/com/sofka/procedimiento/Examen.java,4\9\4979b3906f58a7524c2c0ee2754763461bf2eded
 i
