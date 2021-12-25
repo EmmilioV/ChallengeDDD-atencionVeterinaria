@@ -32,23 +32,26 @@ public class Factura extends Entity<FacturaId> {
         this.examenes = examenes;
     }
 
-    //TODO: calcularS subtotal
     public void calcularSubtotal(){
+        Double subtotal = sumarPrecioExamenes() + sumarPrecioMedicamentos();
+        this.subtotal = new Subtotal(subtotal);
     }
 
-    public void aplicarDescuento(Descuento descuento){
-        this.descuento = descuento;
+    public void aplicarDescuento(Double descuento){
+        this.descuento = new Descuento(descuento);
     }
-    //TODO: calcular Total
+
     public void calcularTotal(){
+        Double total = this.subtotal.value() - (this.subtotal.value() * this.descuento.value());
+        this.total = new Total(total);
     }
 
     private Double sumarPrecioExamenes(){
-        return this.examenes.stream().mapToDouble(examen -> examen.precio().value().doubleValue()).sum();
+        return this.examenes.stream().mapToDouble(examen -> examen.precio().value()).sum();
     }
 
     private Double sumarPrecioMedicamentos(){
-        return this.medicamentos.stream().mapToDouble(medicamento -> medicamento.precio().value().doubleValue()).sum();
+        return this.medicamentos.stream().mapToDouble(medicamento -> medicamento.precio().value()).sum();
     }
 
     public Fecha fecha() {
