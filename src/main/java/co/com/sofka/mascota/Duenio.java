@@ -18,6 +18,9 @@ public class Duenio extends Entity<DuenioId> {
         this.nombre = nombre;
         this.telefono = telefono;
         this.edad = edad;
+        if(this.edad.value() < 18){
+            throw new IllegalArgumentException("El dueño debe ser mayor de edad");
+        }
     }
 
     public void actualizarTelefono(Telefono telefono){
@@ -26,6 +29,9 @@ public class Duenio extends Entity<DuenioId> {
 
     public void actualizarEdad(Edad edad){
         this.edad = Objects.requireNonNull(edad, "La edad no debe ser nula");
+        if(this.edad.value() < 18){
+            throw new IllegalArgumentException("El dueño debe ser mayor de edad");
+        }
     }
 
     public Nombre nombre() {

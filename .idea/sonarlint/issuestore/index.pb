@@ -1,24 +1,12 @@
 
 7
 pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
-^
-.src/main/java/co/com/sofka/generic/Nombre.java,9\b\9b2897f4f5d1ee61948e613dbb22dfce7b437acf
 p
 @src/main/java/co/com/sofka/puntoDeAtencion/values/Ubicacion.java,1\e\1ed08a7676e93ba8fa51fbba1a29a223d66cc3dc
-`
-0src/main/java/co/com/sofka/generic/Cantidad.java,c\2\c21a8d6a4b2223df8aa1742541151ff69cadb008
-^
-.src/main/java/co/com/sofka/generic/Precio.java,d\7\d7d5c206bf86ee4e16a5708fa67c6dab58b4d2e4
-\
-,src/main/java/co/com/sofka/generic/Edad.java,9\a\9ac575dd1795a6be4ed2ff026139d1fda243b671
 u
 Esrc/main/java/co/com/sofka/puntoDeAtencion/values/NumeroDeCedula.java,d\3\d327c18b97a3d064d86f9aa135e88e2649087c84
 y
 Isrc/main/java/co/com/sofka/puntoDeAtencion/values/AniosDeExperiencia.java,c\2\c2413086f7ded2a945e20ab2fce6867586113930
-]
--src/main/java/co/com/sofka/generic/Fecha.java,9\1\918c39f651b7cca9a367dd9ed9c3e120bf858eb7
-_
-/src/main/java/co/com/sofka/generic/Detalle.java,1\f\1faeafbae8479c74bb8f638c84add74a5db50be2
 n
 >src/main/java/co/com/sofka/procedimiento/values/Descuento.java,e\2\e27cd96cdbcdd1d2cd695d55629ddb338167655e
 j
@@ -57,8 +45,6 @@ h
 8src/main/java/co/com/sofka/puntoDeAtencion/Producto.java,b\e\bec7f1abf58ec6cb3a66da4d80bdb28ceae5627c
 k
 ;src/main/java/co/com/sofka/puntoDeAtencion/Veterinario.java,e\0\e097c8af87f7ff35930b76adc7776233a09543b0
-^
-.src/main/java/co/com/sofka/mascota/Duenio.java,e\d\edc49620358ae8cf4fa7a798065b1eea96bc0ce9
 b
 2src/main/java/co/com/sofka/mascota/Enfermedad.java,8\9\897667e81466c6eab4fc31f5197d6219fe687613
 l
@@ -67,11 +53,7 @@ f
 6src/main/java/co/com/sofka/mascota/Caracteristica.java,9\9\99ba462a170fc993533ff012b567254ba73239d8
 w
 Gsrc/main/java/co/com/sofka/mascota/events/CaracteristicaRegistrada.java,b\1\b17e4fefd913d134988815305e47364e92a320ec
-m
-=src/main/java/co/com/sofka/mascota/events/DuenioAsignado.java,e\8\e8bb9df031fa247215aa85dcac9f442d9f750b51
 n
 >src/main/java/co/com/sofka/mascota/events/EdadActualizada.java,7\5\751afcc6ae0b6679c1a9c7efb503e184ea617aac
 q
 Asrc/main/java/co/com/sofka/mascota/events/EnfermedadAniadida.java,0\1\011abb50aeb5a4074721b880f91393e44ea2f667
-e
-5src/main/java/co/com/sofka/mascota/MascotaChange.java,3\8\38b347b449f2ea3449a5d4288c2dc13fde380a83
