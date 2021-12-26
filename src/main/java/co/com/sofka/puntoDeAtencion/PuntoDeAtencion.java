@@ -22,6 +22,17 @@ public class PuntoDeAtencion extends AggregateEvent<PuntoDeAtencionId> {
     protected Set<Producto> productos;
     protected Set<ImplementoMedico> implementosMedicos;
 
+    private PuntoDeAtencion(PuntoDeAtencionId puntoDeAtencionId){
+        super(puntoDeAtencionId);
+        subscribe(new PuntoDeAtencionChange(this));
+    }
+
+    public static PuntoDeAtencion from(PuntoDeAtencionId id, List<DomainEvent> events){
+        var puntoDeAtencion = new PuntoDeAtencion(id);
+        events.forEach(puntoDeAtencion::applyEvent);
+        return puntoDeAtencion;
+    }
+
     public PuntoDeAtencion(PuntoDeAtencionId entityId, Nombre nombre, Ubicacion ubicacion) {
         super(entityId);
         appendChange(new PuntoDeAtencionCreado(nombre, ubicacion)).apply();
