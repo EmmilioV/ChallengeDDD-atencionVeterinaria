@@ -17,12 +17,8 @@ w
 Gsrc/main/java/co/com/sofka/mascota/events/CaracteristicaRegistrada.java,b\1\b17e4fefd913d134988815305e47364e92a320ec
 n
 >src/main/java/co/com/sofka/mascota/events/EdadActualizada.java,7\5\751afcc6ae0b6679c1a9c7efb503e184ea617aac
-m
-=src/main/java/co/com/sofka/mascota/commands/CrearMascota.java,2\4\24d0433d5e6de16126044bfd5263d5aa977d6f87
 r
 Bsrc/main/java/co/com/sofka/mascota/commands/AniadirEnfermedad.java,a\c\ac5213f173c9189da4911ae035dc90ef5572433b
-x
-Hsrc/main/java/co/com/sofka/mascota/commands/RegistrarCaracteristica.java,5\f\5f28557ea1cbf2bc02590e7cf2f3ce65f481d4c8
 o
 ?src/main/java/co/com/sofka/mascota/values/CaracteristicaId.java,c\4\c41fe2484509bc706d2852da0af5ad096b5f6955
 g

@@ -66,7 +66,7 @@ public class PuntoDeAtencion extends AggregateEvent<PuntoDeAtencionId> {
         appendChange(new UbicacionActualizada(ubicacion)).apply();
     }
 
-    private Optional<Veterinario> consultarVeterinarioPorId(VeterinarioId veterinarioId){
+    protected Optional<Veterinario> consultarVeterinarioPorId(VeterinarioId veterinarioId){
         return this.veterinarios.stream()
                 .filter(veterinario -> veterinario.identity().equals(veterinarioId))
                 .findFirst();
