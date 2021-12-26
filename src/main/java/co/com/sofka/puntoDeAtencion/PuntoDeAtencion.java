@@ -1,11 +1,17 @@
 package co.com.sofka.puntoDeAtencion;
 
 import co.com.sofka.domain.generic.AggregateEvent;
+import co.com.sofka.domain.generic.DomainEvent;
+import co.com.sofka.generic.Cantidad;
+import co.com.sofka.generic.Edad;
 import co.com.sofka.generic.Nombre;
-import co.com.sofka.puntoDeAtencion.events.PuntoDeAtencionCreado;
-import co.com.sofka.puntoDeAtencion.values.PuntoDeAtencionId;
-import co.com.sofka.puntoDeAtencion.values.Ubicacion;
+import co.com.sofka.generic.Precio;
+import co.com.sofka.puntoDeAtencion.events.*;
+import co.com.sofka.puntoDeAtencion.values.*;
 
+import java.util.List;
+import java.util.Objects;
+import java.util.Optional;
 import java.util.Set;
 
 public class PuntoDeAtencion extends AggregateEvent<PuntoDeAtencionId> {
@@ -19,5 +25,39 @@ public class PuntoDeAtencion extends AggregateEvent<PuntoDeAtencionId> {
     public PuntoDeAtencion(PuntoDeAtencionId entityId, Nombre nombre, Ubicacion ubicacion) {
         super(entityId);
         appendChange(new PuntoDeAtencionCreado(nombre, ubicacion)).apply();
+    }
+
+    public void registrarProducto(ProductoId entityId, Nombre nombre, Cantidad cantidad, Precio precio){
+        Objects.requireNonNull(entityId,"ProductoId no debe ser nulo");
+        Objects.requireNonNull(entityId,"nombre no debe ser nulo");
+        Objects.requireNonNull(entityId,"cantidad no debe ser nulo");
+        Objects.requireNonNull(entityId,"precio no debe ser nulo");
+        appendChange(new ProductoRegistrado(entityId, nombre, cantidad, precio)).apply();
+    }
+
+    public void registrarImplementoMedico(ImplementoMedicoId entityId, Nombre nombre, Cantidad cantidad){
+        Objects.requireNonNull(entityId,"entityId no debe ser nulo");
+        Objects.requireNonNull(entityId,"nombre no debe ser nulo");
+        Objects.requireNonNull(entityId,"cantidad no debe ser nulo");
+        appendChange(new ImplementoMedicoRegistrado(entityId, nombre, cantidad)).apply();
+    }
+
+    public void agregarVeterinario(VeterinarioId entityId, NumeroDeCedula numeroDeCedula, Nombre nombre, Edad edad){
+        Objects.requireNonNull(entityId,"entityId no debe ser nulo");
+        Objects.requireNonNull(entityId,"numeroDeCedula no debe ser nulo");
+        Objects.requireNonNull(entityId,"nombre no debe ser nulo");
+        Objects.requireNonNull(entityId,"edad no debe ser nulo");
+        appendChange(new VeterinarioAgregado(entityId, numeroDeCedula, nombre, edad)).apply();
+    }
+
+    public void actualizarUbicacion(Ubicacion ubicacion){
+        Objects.requireNonNull(ubicacion, "La ubicacion no debe ser nula");
+        appendChange(new UbicacionActualizada(ubicacion)).apply();
+    }
+
+    private Optional<Veterinario> consultarVeterinarioPorId(VeterinarioId veterinarioId){
+        return this.veterinarios.stream()
+                .filter(veterinario -> veterinario.identity().equals(veterinarioId))
+                .findFirst();
     }
 }
