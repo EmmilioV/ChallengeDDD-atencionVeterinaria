@@ -3,8 +3,6 @@
 pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
 x
 Hsrc/main/java/co/com/sofka/procedimiento/events/ProcedimientoCreado.java,4\b\4b86fafd291d0f2496f8fbff260bf32c5b199804
-|
-Lsrc/main/java/co/com/sofka/puntoDeAtencion/events/PuntoDeAtencionCreado.java,2\6\26ffc68bb22b3de436c5eeaed9d61c071ee0c56d
 d
 4src/main/java/co/com/sofka/procedimiento/Examen.java,4\9\4979b3906f58a7524c2c0ee2754763461bf2eded
 i
@@ -25,8 +23,6 @@ r
 Bsrc/main/java/co/com/sofka/mascota/commands/AniadirEnfermedad.java,a\c\ac5213f173c9189da4911ae035dc90ef5572433b
 x
 Hsrc/main/java/co/com/sofka/mascota/commands/RegistrarCaracteristica.java,5\f\5f28557ea1cbf2bc02590e7cf2f3ce65f481d4c8
-o
-?src/main/java/co/com/sofka/mascota/commands/ActualizarEdad.java,4\8\489d9f394e76aba8a8313d381fbcf9aad1f53e90
 o
 ?src/main/java/co/com/sofka/mascota/values/CaracteristicaId.java,c\4\c41fe2484509bc706d2852da0af5ad096b5f6955
 g
@@ -55,12 +51,8 @@ m
 =src/main/java/co/com/sofka/mascota/events/DuenioAsignado.java,e\8\e8bb9df031fa247215aa85dcac9f442d9f750b51
 n
 >src/main/java/co/com/sofka/mascota/commands/AsignarDuenio.java,5\1\512df8d8f12a95467c2183a7e851709f20b126fd
-e
-5src/main/java/co/com/sofka/mascota/MascotaChange.java,3\8\38b347b449f2ea3449a5d4288c2dc13fde380a83
 _
 /src/main/java/co/com/sofka/generic/Detalle.java,1\f\1faeafbae8479c74bb8f638c84add74a5db50be2
-^
-.src/main/java/co/com/sofka/mascota/Duenio.java,e\d\edc49620358ae8cf4fa7a798065b1eea96bc0ce9
 \
 ,src/main/java/co/com/sofka/generic/Edad.java,9\a\9ac575dd1795a6be4ed2ff026139d1fda243b671
 ]
@@ -103,7 +95,5 @@ h
 8src/main/java/co/com/sofka/puntoDeAtencion/Producto.java,b\e\bec7f1abf58ec6cb3a66da4d80bdb28ceae5627c
 k
 ;src/main/java/co/com/sofka/puntoDeAtencion/Veterinario.java,e\0\e097c8af87f7ff35930b76adc7776233a09543b0
-p
-@src/main/java/co/com/sofka/puntoDeAtencion/ImplementoMedico.java,e\6\e6afce3714b2725ac4397e3eccfa46bed6138d7c
 q
 Asrc/main/java/co/com/sofka/mascota/events/EnfermedadAniadida.java,0\1\011abb50aeb5a4074721b880f91393e44ea2f667
