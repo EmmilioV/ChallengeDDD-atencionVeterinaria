@@ -151,8 +151,6 @@ w
 Gsrc/main/java/co/com/sofka/domain/puntoDeAtencion/values/Ubicacion.java,f\0\f08497c47e9b73db5608bd08ec5eb223671e3965
 Ç
 Rsrc/main/java/co/com/sofka/domain/puntoDeAtencion/events/UbicacionActualizada.java,a\d\adea25c0ae19e4824b48cc18b034d4150ea0ac5f
-r
-Bsrc/main/java/co/com/sofka/domain/puntoDeAtencion/Veterinario.java,a\d\ad5bc2e40ab2eba269012eb78e55c9e214db6d82
 Å
 Qsrc/main/java/co/com/sofka/domain/puntoDeAtencion/events/VeterinarioAgregado.java,a\9\a91eeff60da4c5b1346e7e7dec52df88ce272044
 {

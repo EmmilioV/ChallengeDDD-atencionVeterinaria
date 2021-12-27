@@ -71,4 +71,24 @@ public class PuntoDeAtencion extends AggregateEvent<PuntoDeAtencionId> {
                 .filter(veterinario -> veterinario.identity().equals(veterinarioId))
                 .findFirst();
     }
+
+    public Nombre nombre() {
+        return nombre;
+    }
+
+    public Ubicacion ubicacion() {
+        return ubicacion;
+    }
+
+    public Set<Veterinario> veterinarios() {
+        return veterinarios;
+    }
+
+    public Set<Producto> productos() {
+        return productos;
+    }
+
+    public Set<ImplementoMedico> implementosMedicos() {
+        return implementosMedicos;
+    }
 }
