@@ -63,5 +63,6 @@ class RegistrarCaracteristicaUseCaseTest {
                 new Nombre("Harry"),
                 new Edad(2)
         ));
+
     }
 }
