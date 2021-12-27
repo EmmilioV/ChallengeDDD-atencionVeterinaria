@@ -75,8 +75,6 @@ l
 Ksrc/main/java/co/com/sofka/domain/procedimiento/events/FacturaGenerada.java,3\a\3a7683c08c4b53eac45d5537c44b88826b9cc255
 u
 Esrc/main/java/co/com/sofka/domain/procedimiento/values/FacturaId.java,8\1\81c0bee03dee474738ac4550217ac2ff948de770
-d
-4src/main/java/co/com/sofka/domain/generic/Fecha.java,a\f\af1c0b3c7823be07e056ebdbae30f683e3259de8
 |
 Lsrc/main/java/co/com/sofka/domain/procedimiento/commands/GenerarFactura.java,6\4\6492299f3e84967648dbce584e0385dc851811ce
 w

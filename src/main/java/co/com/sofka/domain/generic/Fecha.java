@@ -9,8 +9,8 @@ public class Fecha implements ValueObject<Date> {
 
     public Fecha(Date value) {
         this.value = Objects.requireNonNull(value);
-        if(this.value.before(new Date(Instant.now().toEpochMilli()))){
-            throw new IllegalArgumentException("La no debe de ser anterior a la fecha actual");
+        if(this.value.after(new Date(Instant.now().toEpochMilli()))){
+            throw new IllegalArgumentException("La no debe de ser superior a la fecha actual");
         }
     }
 
