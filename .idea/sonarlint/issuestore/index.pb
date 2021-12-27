@@ -1,6 +1,4 @@
 
-7
-pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
 b
 2src/main/java/co/com/sofka/mascota/Enfermedad.java,8\9\897667e81466c6eab4fc31f5197d6219fe687613
 l
@@ -51,8 +49,6 @@ _
 0src/main/java/co/com/sofka/generic/Cantidad.java,c\2\c21a8d6a4b2223df8aa1742541151ff69cadb008
 ^
 .src/main/java/co/com/sofka/generic/Nombre.java,9\b\9b2897f4f5d1ee61948e613dbb22dfce7b437acf
-y
-Isrc/main/java/co/com/sofka/puntoDeAtencion/values/AniosDeExperiencia.java,c\2\c2413086f7ded2a945e20ab2fce6867586113930
 d
 4src/main/java/co/com/sofka/mascota/values/Color.java,4\3\4321c8fd8ab64d7f1d357c271e8ffe93c7eda5ec
 n
@@ -81,23 +77,15 @@ k
 ;src/main/java/co/com/sofka/puntoDeAtencion/Veterinario.java,e\0\e097c8af87f7ff35930b76adc7776233a09543b0
 q
 Asrc/main/java/co/com/sofka/mascota/events/EnfermedadAniadida.java,0\1\011abb50aeb5a4074721b880f91393e44ea2f667
-Å
-Qsrc/main/java/co/com/sofka/puntoDeAtencion/events/ImplementoMedicoRegistrado.java,f\b\fb93a465eb450b71b7cf9b990602f0e699c5551c
 {
 Ksrc/main/java/co/com/sofka/puntoDeAtencion/events/UbicacionActualizada.java,6\9\6903f3382b2aa02851e095429f131ed5a5ff399c
 z
 Jsrc/main/java/co/com/sofka/puntoDeAtencion/events/VeterinarioAgregado.java,b\b\bb22b01ef442f544b48aae2c88b35ded3334af08
 ^
 .src/main/java/co/com/sofka/mascota/Duenio.java,e\d\edc49620358ae8cf4fa7a798065b1eea96bc0ce9
-p
-@src/main/java/co/com/sofka/puntoDeAtencion/ImplementoMedico.java,e\6\e6afce3714b2725ac4397e3eccfa46bed6138d7c
 |
 Lsrc/main/java/co/com/sofka/puntoDeAtencion/events/PuntoDeAtencionCreado.java,2\6\26ffc68bb22b3de436c5eeaed9d61c071ee0c56d
 y
 Isrc/main/java/co/com/sofka/puntoDeAtencion/events/ProductoRegistrado.java,1\3\13294208547610a47c34e9916f0ca35b6fa7a367
-u
-Esrc/main/java/co/com/sofka/puntoDeAtencion/PuntoDeAtencionChange.java,b\6\b667cb406a0fb102906575297d5942467bc3149f
-m
-=src/main/java/co/com/sofka/mascota/commands/CrearMascota.java,2\4\24d0433d5e6de16126044bfd5263d5aa977d6f87
 x
 Hsrc/main/java/co/com/sofka/mascota/commands/RegistrarCaracteristica.java,5\f\5f28557ea1cbf2bc02590e7cf2f3ce65f481d4c8
