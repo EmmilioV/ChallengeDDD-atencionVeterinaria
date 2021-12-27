@@ -1,6 +1,7 @@
 package co.com.sofka.procedimiento;
 
 import co.com.sofka.domain.generic.AggregateEvent;
+import co.com.sofka.domain.generic.DomainEvent;
 import co.com.sofka.generic.Detalle;
 import co.com.sofka.generic.Fecha;
 import co.com.sofka.generic.Nombre;
@@ -10,6 +11,7 @@ import co.com.sofka.procedimiento.events.*;
 import co.com.sofka.procedimiento.values.*;
 import co.com.sofka.puntoDeAtencion.values.PuntoDeAtencionId;
 
+import java.util.List;
 import java.util.Objects;
 import java.util.Set;
 
@@ -23,6 +25,17 @@ public class Procedimiento extends AggregateEvent<ProcedimientoId> {
     protected Factura factura;
     protected Set<Medicamento> medicamentos;
     protected Set<Examen> examenes;
+
+    private Procedimiento(ProcedimientoId procedimientoId){
+        super(procedimientoId);
+        subscribe(new ProcedimientoChange(this));
+    }
+
+    public static Procedimiento from(ProcedimientoId procedimientoId, List<DomainEvent> events){
+        var procedimiento = new Procedimiento(procedimientoId);
+        events.forEach(procedimiento::applyEvent);
+        return procedimiento;
+    }
 
     public Procedimiento(ProcedimientoId entityId, PuntoDeAtencionId puntoDeAtencionId, MascotaId mascotaId, Fecha fecha, Nombre nombre) {
         super(entityId);
@@ -76,9 +89,10 @@ public class Procedimiento extends AggregateEvent<ProcedimientoId> {
         appendChange(new SubtotalDeFacturaCalculado(entityId)).apply();
     }
 
-    public void asignarDescuentoAFactura(Descuento descuento){
+    public void asignarDescuentoAFactura(FacturaId entityId, Descuento descuento){
+        Objects.requireNonNull(entityId, "FacturaId no debe ser nulo");
         Objects.requireNonNull(descuento, "Descuento no debe ser nulo");
-        appendChange(new DescuentoAsignadoAFactura(descuento)).apply();
+        appendChange(new DescuentoAsignadoAFactura(entityId, descuento)).apply();
     }
 
     public void calcularTotalDeFactura(FacturaId entityId){

@@ -95,13 +95,9 @@ p
 Lsrc/main/java/co/com/sofka/puntoDeAtencion/events/PuntoDeAtencionCreado.java,2\6\26ffc68bb22b3de436c5eeaed9d61c071ee0c56d
 y
 Isrc/main/java/co/com/sofka/puntoDeAtencion/events/ProductoRegistrado.java,1\3\13294208547610a47c34e9916f0ca35b6fa7a367
-e
-5src/main/java/co/com/sofka/mascota/MascotaChange.java,3\8\38b347b449f2ea3449a5d4288c2dc13fde380a83
 u
 Esrc/main/java/co/com/sofka/puntoDeAtencion/PuntoDeAtencionChange.java,b\6\b667cb406a0fb102906575297d5942467bc3149f
 m
 =src/main/java/co/com/sofka/mascota/commands/CrearMascota.java,2\4\24d0433d5e6de16126044bfd5263d5aa977d6f87
 x
 Hsrc/main/java/co/com/sofka/mascota/commands/RegistrarCaracteristica.java,5\f\5f28557ea1cbf2bc02590e7cf2f3ce65f481d4c8
-o
-?src/main/java/co/com/sofka/mascota/commands/ActualizarEdad.java,4\8\489d9f394e76aba8a8313d381fbcf9aad1f53e90
