@@ -129,8 +129,6 @@ Lsrc/main/java/co/com/sofka/domain/puntoDeAtencion/PuntoDeAtencionChange.java,d
 Ssrc/main/java/co/com/sofka/domain/puntoDeAtencion/events/PuntoDeAtencionCreado.java,5\b\5bc834ab4b7d915666c360aac4d51910f2edc482
 
 Osrc/main/java/co/com/sofka/domain/puntoDeAtencion/values/PuntoDeAtencionId.java,6\b\6b1150807865fcecab0cab745d0a011de655593e
-j
-:src/main/java/co/com/sofka/domain/mascota/values/Raza.java,7\b\7baf04176d90a77d5aa3ba4cce03d58e448718ce
 
 Osrc/main/java/co/com/sofka/domain/mascota/commands/RegistrarCaracteristica.java,4\6\46c19c2b2d5612c1469e022297017da292371a02
 ‰
