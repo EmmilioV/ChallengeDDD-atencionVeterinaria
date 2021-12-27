@@ -3,12 +3,16 @@ package co.com.sofka.useCase;
 import co.com.sofka.business.generic.UseCaseHandler;
 import co.com.sofka.business.repository.DomainEventRepository;
 import co.com.sofka.business.support.RequestCommand;
-import co.com.sofka.domain.generic.*;
+import co.com.sofka.domain.generic.DomainEvent;
+import co.com.sofka.domain.generic.Fecha;
+import co.com.sofka.domain.generic.Nombre;
+import co.com.sofka.domain.generic.Precio;
 import co.com.sofka.domain.mascota.values.MascotaId;
-import co.com.sofka.domain.procedimiento.commands.AniadirExamen;
-import co.com.sofka.domain.procedimiento.events.ExamenAniadido;
+import co.com.sofka.domain.procedimiento.commands.AniadirMedicamento;
+import co.com.sofka.domain.procedimiento.events.MedicamentoAniadido;
 import co.com.sofka.domain.procedimiento.events.ProcedimientoCreado;
-import co.com.sofka.domain.procedimiento.values.ExamenId;
+import co.com.sofka.domain.procedimiento.values.Laboratorio;
+import co.com.sofka.domain.procedimiento.values.MedicamentoId;
 import co.com.sofka.domain.procedimiento.values.ProcedimientoId;
 import co.com.sofka.domain.puntoDeAtencion.values.PuntoDeAtencionId;
 import org.junit.jupiter.api.Assertions;
@@ -24,21 +28,22 @@ import java.util.List;
 import static org.mockito.Mockito.when;
 
 @ExtendWith(MockitoExtension.class)
-class AniadirExamenUseCaseTest {
+class AniadirMedicamentoUseCaseTest {
 
     @Mock
     DomainEventRepository repository;
 
     @Test
-    public void AniadirExamen(){
+    public void AniadirMedicamento(){
         //Arrange
         ProcedimientoId procedimientoId = ProcedimientoId.of("xxx");
-        ExamenId examenId = ExamenId.of("yyy");
-        Nombre nombre = new Nombre("Radiografia pulmonar");
-        Precio precio = new Precio(22000.00);
+        MedicamentoId medicamentoId = MedicamentoId.of("yyy");
+        Laboratorio laboratorio = new Laboratorio("MyG");
+        Nombre nombre = new Nombre("Acetaminofen");
+        Precio precio = new Precio(500.0);
 
-        var command = new AniadirExamen(procedimientoId, examenId, nombre, precio);
-        var useCase = new AniadirExamenUseCase();
+        var command = new AniadirMedicamento(procedimientoId, medicamentoId, nombre, laboratorio, precio);
+        var useCase = new AniadirMedicamentoUseCase();
 
         //Act
         when(repository.getEventsBy("xxx")).thenReturn(events());
@@ -51,11 +56,12 @@ class AniadirExamenUseCaseTest {
                 .getDomainEvents();
 
         //Assert
-        var event = (ExamenAniadido) events.get(0);
+        var event = (MedicamentoAniadido) events.get(0);
         Mockito.verify(repository).getEventsBy("xxx");
         Assertions.assertEquals("yyy", command.getEntityId().value());
-        Assertions.assertEquals("22000.0", command.getPrecio().value().toString());
-        Assertions.assertEquals("Radiografia pulmonar", command.getNombre().value());
+        Assertions.assertEquals("500.0", command.getPrecio().value().toString());
+        Assertions.assertEquals("MyG", command.getLaboratorio().value());
+        Assertions.assertEquals("Acetaminofen", command.getNombre().value());
     }
 
     private List<DomainEvent> events() {
