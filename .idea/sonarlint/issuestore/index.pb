@@ -75,8 +75,6 @@ l
 Ksrc/main/java/co/com/sofka/domain/procedimiento/events/FacturaGenerada.java,3\a\3a7683c08c4b53eac45d5537c44b88826b9cc255
 u
 Esrc/main/java/co/com/sofka/domain/procedimiento/values/FacturaId.java,8\1\81c0bee03dee474738ac4550217ac2ff948de770
-|
-Lsrc/main/java/co/com/sofka/domain/procedimiento/commands/GenerarFactura.java,6\4\6492299f3e84967648dbce584e0385dc851811ce
 w
 Gsrc/main/java/co/com/sofka/domain/puntoDeAtencion/ImplementoMedico.java,0\6\06f423d70a5f3e0c3b70a697c58a468d4d126d5c
 €
