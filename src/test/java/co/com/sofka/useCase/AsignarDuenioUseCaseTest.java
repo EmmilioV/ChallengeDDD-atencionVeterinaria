@@ -12,6 +12,7 @@ import co.com.sofka.domain.mascota.events.MascotaCreada;
 import co.com.sofka.domain.mascota.values.DuenioId;
 import co.com.sofka.domain.mascota.values.MascotaId;
 import co.com.sofka.domain.mascota.values.Telefono;
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.Mock;
@@ -53,6 +54,10 @@ class AsignarDuenioUseCaseTest {
         //Assert
         var event = (DuenioAsignado) events.get(0);
         Mockito.verify(repository).getEventsBy("xxx");
+        Assertions.assertEquals("yyy", command.getEntityId().value());
+        Assertions.assertEquals("Juan", command.getNombre().value());
+        Assertions.assertEquals("3122345", command.getTelefono().value());
+        Assertions.assertEquals("19", command.getEdad().value().toString());
 
     }
 
