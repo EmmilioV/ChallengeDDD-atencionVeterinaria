@@ -107,8 +107,6 @@ j
 pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
 e
 5src/main/java/co/com/sofka/domain/generic/Precio.java,f\9\f957ac89e919da0f3c13f07d7ea621e78b43916b
-r
-Bsrc/main/java/co/com/sofka/domain/procedimiento/Procedimiento.java,7\f\7f11b6920ff63207817138969752a2fc6704fbd9
 x
 Hsrc/main/java/co/com/sofka/domain/procedimiento/ProcedimientoChange.java,5\1\514d9fbf527e11c46c3e99315b28e3c815987d23
 
@@ -135,8 +133,6 @@ Ysrc/main/java/co/com/sofka/domain/puntoDeAtencion/commands/RegistrarImplementoM
 Qsrc/main/java/co/com/sofka/domain/puntoDeAtencion/commands/RegistrarProducto.java,e\e\ee9df2a21011268067a922c99fc1932208fbb7c1
 t
 Dsrc/main/java/co/com/sofka/domain/procedimiento/values/Subtotal.java,f\1\f1fdf78e2eedcc1e1cb70a0974451fc30f15c577
-†
-Vsrc/main/java/co/com/sofka/domain/procedimiento/events/SubtotalDeFacturaCalculado.java,2\2\22026ff10ed78e37c08ee79b79d30ef2eb96431f
 m
 =src/main/java/co/com/sofka/domain/mascota/values/Tamanio.java,a\d\ad0d9a02fcd9800e7bd25f4a62f64a7ee815741d
 n
