@@ -165,7 +165,3 @@ t
 Dsrc/main/java/co/com/sofka/domain/mascota/commands/CrearMascota.java,2\8\283156060c58fb6fe7e02b9ec3234ed60e0955db
 x
 Hsrc/main/java/co/com/sofka/domain/mascota/events/EnfermedadAniadida.java,f\b\fbcdcb84bb51edf1c17d744b01ab640db84393ba
-f
-6src/main/java/co/com/sofka/domain/mascota/Mascota.java,7\4\7439bf634fed0ff9a1ed5430390181f6848b41e8
-p
-@src/test/java/co/com/sofka/useCase/AsignarDuenioUseCaseTest.java,3\6\36bfc387a48dd0d5aea19463562467a54d0d8e98
