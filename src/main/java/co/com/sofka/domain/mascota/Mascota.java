@@ -31,7 +31,7 @@ public class Mascota extends AggregateEvent<MascotaId> {
         subscribe(new MascotaChange(this));
     }
 
-    private static Mascota from(MascotaId mascotaId, List<DomainEvent> events){
+    public static Mascota from(MascotaId mascotaId, List<DomainEvent> events){
         var mascota = new Mascota(mascotaId);
         events.forEach(mascota::applyEvent);
         return mascota;
