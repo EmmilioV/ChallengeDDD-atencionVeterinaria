@@ -3,8 +3,6 @@ v
 Fsrc/main/java/co/com/sofka/domain/mascota/commands/ActualizarEdad.java,9\7\973490fc4d0818237a635f06b248f12192f21b11
 â
 Ysrc/main/java/co/com/sofka/domain/procedimiento/commands/ActualizarExamenesDeFactura.java,3\b\3b92dd79525b7064ca27f0c7a912ed48d65c1100
-ç
-]src/main/java/co/com/sofka/domain/procedimiento/commands/ActualizarMedicamentosDeFactura.java,e\3\e3bd8a7c9772d2a3790d0b1b4328a652f06faf8e
 É
 Ssrc/main/java/co/com/sofka/domain/puntoDeAtencion/commands/ActualizarUbicacion.java,d\a\daab19823b20590836f46a2ed8ae69a79e98cb59
 Ç
@@ -107,8 +105,6 @@ j
 pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
 e
 5src/main/java/co/com/sofka/domain/generic/Precio.java,f\9\f957ac89e919da0f3c13f07d7ea621e78b43916b
-x
-Hsrc/main/java/co/com/sofka/domain/procedimiento/ProcedimientoChange.java,5\1\514d9fbf527e11c46c3e99315b28e3c815987d23
 
 Osrc/main/java/co/com/sofka/domain/procedimiento/events/ProcedimientoCreado.java,9\9\9994e76447f5099dcc3cdd354de9b9129566b202
 {
